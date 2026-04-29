@@ -1,0 +1,41 @@
+
+  Installing Tile World for Windows
+
+First of all, you'll want to store the files contained in this archive into
+its own separate directory. If you're using the automatic installer
+program, then you can do this during the installation. Otherwise, you'll
+need to create a new directory for this -- something like c:\tworld -- and
+extract the files there.
+
+If you have a copy of the original chips.dat data file, you can use it with
+Tile World by copying it to the data subdirectory. The shell commands would
+look like this:
+
+  cd c:\wherever\my\copy\of\chips\challenge\is\at
+  copy chips.dat c:\tworld\data
+
+If you have other data files that you would like to try out in the clone,
+copy those to the sets directory instead:
+
+  cd c:\my\collection\of\dat\files
+  copy *.dat c:\tworld\sets
+
+(The reason for using different directories is that chips.dat makes use of
+configuration files. Note that you don't need to know how configuration
+files work to use Tile World.)
+
+That's all that needs to be done to set it up. Run the program as
+c:\tworld\tworld, or create a shortcut for it.
+
+Note that Tile World's user interface does not use the mouse; everything is
+done with the keyboard. You can type "?" while a game is being displayed to
+see a description of what the keys do. Or, you can read the instructions
+found in the tworld.html.
+
+  mklynxcc.com
+
+A very simple command-line utility is included called mklynxcc. This
+program will change a normal data file to one that will use the Lynx
+ruleset when played. By making a copy of a data file and running this
+utility on the copy, you can see how those levels work (or don't work)
+under the Lynx ruleset.

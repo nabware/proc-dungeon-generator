@@ -1,0 +1,31 @@
+# Local Python environments
+venv/
+.venv/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.so
+
+# Generated solver outputs and scratch artifacts
+generated_*
+asp_generated_*
+*_scratch.*
+*_path_icons.png
+*_path_icons_scratch.png
+*_route.gif
+*_route_scratch.gif
+*_two_graph_*.png
+*_two_graph_*.gif
+*_macro_rooms.png
+*_macro_plan.png
+
+# Scraped documentation mirrors and their extracted asset folders
+*.html
+*_files/
+
+# Misc local clutter
+*.log
+*.tmp
+*.bak
+.DS_Store

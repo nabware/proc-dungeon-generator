@@ -1,0 +1,22 @@
+Hold <SHIFT> while drawing to draw on layer 2.  Unlike ChipEdit, the 2nd mouse button is now another drawing button.
+You can test levelsets in either Microsoft Chip's Challenge or TileWorld.  Just click on the appropriate button.
+You can edit levels with the TileWorld graphics.  Press F8 or select it in the options dialog box to switch.
+You can open more than one level at a time.  Go to options, and de-select "Allow only one window to be open at a time."
+The cut/copy/paste features are compatable with Chip's Workshop and ChipEdit, so you can move level data between the three programs.
+When you cut or copy a level selection, it is also placed on the clipboard as a bitmap, so you can use it in graphics programs.
+You can zoom to 75% or 50% to see more of a level.  You can also change the default zoom level in the options box.
+If you are having trouble playtesting with TileWorld, make sure that your path doesn't contain any spaces.  TileWorld doesn't like spaces in it's path.
+You can turn off the new tooltips feature and just use the status bar instead for information.
+If your monsters aren't behaving properly, try moving them around in the monster list editor.
+Chip's Challenge has a limit of 128 monsters in the monster list.  If your monster isn't in the list, you may have too many!
+The Path Maker tool can be very useful for ice and force floor paths, but it will actually make paths out of anything that can be directional.
+The TileWorld graphics won't work on Windows NT.  If you are having problems, go back to the original CC graphics.
+A .ccl file is just a .dat file, but with a different extension.  I use .ccl so that it can be opened with the CCLM more easily, and can be seperate from other .dat files.  However, the two are still 100% compatable.
+A .dac file is a special info file for TileWorld that specifies more info about a levelset.
+Changing graphic sets from TileWorld to MS and vice versa is faster if you have fewer or no open levels.
+CCEdit can be run at 640x480, but it's not recommended.  If you first run CCEdit in 640x480, it will disable the secondary toolbar, but you can get it back from the view menu.
+The Path Maker works for layer 2 as well as layer 1.
+Monsters on layer 2 are essentially useless, and are therefore not added to the monster list.
+There is (currently) no undo button, so only save if you're sure you want to keep your changes!
+To try wierd and unsupported stuff, enable the advanced menu from the Options dialog box.
+You can always send suggestions, bug reports, etc. to mathwiz@zianet.com.

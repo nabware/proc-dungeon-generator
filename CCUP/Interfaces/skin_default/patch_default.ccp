@@ -1,0 +1,96 @@
+[General]
+PrgTitle=Chip's Challenge
+EntPack=entpack.ini
+EntPackEntry=Chip's Challenge
+ChipsDAT=CHIPS.DAT
+Unknown=Chip's Challenge
+AboutName=Chip's Challenge
+[Default Sounds]
+Tool=blip2.wav
+Door=door.wav
+Death=bummer.wav
+LevComplete=ditty1.wav
+Socket=chimes.wav
+HitWall=oof3.wav
+Thief=strike.wav
+Sound=chimes.wav
+Chip=click3.wav
+Button=pop2.wav
+Water=water2.wav
+Bomb=hit3.wav
+Teleporter=teleport.wav
+Timer=click1.wav
+Bell=bell.wav
+Midi1=chip01.mid
+Midi2=chip02.mid
+Midi3=canyon.mid
+[Menus]
+Game=&Game
+NewGame=&New Game
+Pause=&Pause
+BestTimes=Best &Times...
+Exit=E&xit
+Cheat=&Ignore Passwords
+Options=&Options
+Music=&Background Music
+SFX=&Sound Effects
+Color=&Color
+Level=&Level
+Restart=&Restart	Ctrl+R
+Next=&Next	Ctrl+N
+Previous=&Previous	Ctrl+P
+GoTo=&Go To...
+Help=&Help
+Contents=&Contents	F1
+HowToPlay=&How to Play
+Commands=C&ommands
+UseHelp=How to &Use Help
+About=&About Chip's Challenge...
+[Part Texts]
+Part1=Picking up chips is what the challenge is all about. But on the ice, Chip gets chapped and feels like a chump instead of a champ.
+Part2=Chip hits the ice and decides to chill out. Then he runs into a fake wall and turns the maze into a thrash-a-thon!
+Part3=Chip is halfway through the world's hardest puzzle. If he succeeds, maybe the kids will stop calling him computer breath!
+Part4=Chip used to spend his time programming computer games and making models. But that was just practice for this brain-buster!
+Part5='I can do it! I know I can!' Chip thinks as the going gets tougher. Besides, Melinda the Mental Marvel waits at the end!
+Part6=Besides being an angel on earth, Melinda is the top scorer in the Challenge--and the president of the Bit Busters.
+Part7=Chip can't wait to join the Bit Busters! The club's already figured out the school's password and accessed everyone's grades!
+Part8=If Chip's grades aren't as good as Melinda's, maybe she'll come over to his house and help him study!
+Part9='I've made it this far,' Chip thinks. 'Totally fair, with my mega-brain.' Then he starts the next maze. 'Totally unfair!' he yelps.
+Part10=Groov-u-loids! Chip makes it almost to the end. He's stoked!
+[End Level]
+FirstTry=Yowser! First Try!
+GoBitBuster=Go Bit Buster!
+Finished=Finished! Good Work!
+AtLast=At last! You did it!
+TimeBon=Time Bonus:  %d
+LevBon=Level Bonus:  %li
+LevScore=Level Score:  %li
+TotScore=Total Score:  %li
+TimeRecord=You have established a time record for this level!
+BeatTR=You beat the previous time record by %d second%s!
+IncScore=You increased your score on this level by %li point%s!
+[End Game]
+Msg1=Great Job, Chip!
+Msg2=Melinda herself offers Chip membership in the exclusive Bit Busters computer club, and gives him access to the club's computer system.  Chip is in heaven!
+MsgScore=You completed %d levels, and your total score for the challenge is %li points.
+FLevNum=144
+LevNum=149
+[Miscellaneous]
+Death1=Ooops! Don't step in the fire without fire boots!
+Death2=Ooops! Chip can't swim without flippers!
+Death3=Ooops! Don't touch the bombs!
+Death4=Ooops! Watch out for moving blocks!
+Death5=Ooops! Look out for creatures!
+Death6=Ooops! Out of time
+SkipLev=You seem to be having trouble with this level.
+NewGame=Starting a new game will begin you back at level 1, reset your score to zero, and forget the passwords to any levels you have visited.
+NoMemory=There is not enough memory to load Chip's Challenge.
+CorruptDAT=Corrupt or inaccessible CHIPS.DAT file.
+[Graphics]
+OBJ32_4=C:\Windows\CCUP\Interfaces\skin_default\OBJ32_4.bmp
+OBJ32_4E=C:\Windows\CCUP\Interfaces\skin_default\OBJ32_4E.bmp
+OBJ32_1=C:\Windows\CCUP\Interfaces\skin_default\OBJ32_1.bmp
+BACKGROUND=C:\Windows\CCUP\Interfaces\skin_default\BACKGROUND.bmp
+INFOWND=C:\Windows\CCUP\Interfaces\skin_default\INFOWND.bmp
+CHIPEND=C:\Windows\CCUP\Interfaces\skin_default\CHIPEND.bmp
+GFX200=C:\Windows\CCUP\Interfaces\skin_default\200.bmp

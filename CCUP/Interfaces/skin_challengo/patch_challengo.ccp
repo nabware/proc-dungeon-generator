@@ -1,0 +1,96 @@
+[General]
+PrgTitle=Ray's Challenge
+EntPack=entpack.ini
+EntPackEntry=Chip's Challenge
+ChipsDAT=CHIPS.DAT
+Unknown=Chip's Challenge
+AboutName=Chip's Challenge
+[Default Sounds]
+Tool=blip2.wav
+Door=door.wav
+Death=bummer.wav
+LevComplete=ditty1.wav
+Socket=chimes.wav
+HitWall=oof3.wav
+Thief=strike.wav
+Sound=chimes.wav
+Chip=click3.wav
+Button=pop2.wav
+Water=water2.wav
+Bomb=hit3.wav
+Teleporter=teleport.wav
+Timer=click1.wav
+Bell=bell.wav
+Midi1=chip01.mid
+Midi2=chip02.mid
+Midi3=canyon.mid
+[Menus]
+Game=&Game
+NewGame=&New Game
+Pause=&Pause
+BestTimes=Best &Times...
+Exit=E&xit
+Cheat=&Ignore Passwords
+Options=&Options
+Music=&Background Music
+SFX=&Sound Effects
+Color=&Color
+Level=&Level
+Restart=&Restart	Ctrl+R
+Next=&Next	Ctrl+N
+Previous=&Previous	Ctrl+P
+GoTo=&Go To...
+Help=&Help
+Contents=&Contents	F1
+HowToPlay=&How to Play
+Commands=C&ommands
+UseHelp=How to &Use Help
+About=&About Chip's Challenge...
+[Part Texts]
+Part1=Picking up points is what the challenge is all about. But on the ice, Ray gets chapped and feels like a chump instead of a champ.
+Part2=Ray hits the ice and decides to chill out. Then he runs into a fake wall and turns the maze into a thrash-a-thon!
+Part3=Ray is halfway through the world's hardest puzzle. If he succeeds, maybe the kids will stop calling him a fag!
+Part4=Ray used to spend his time wanking and smoking weed. But that was just practice for this ball-buster!
+Part5='I can do it! I know I can!' Ray thinks as the going gets tougher. Besides, Melinda the Insane Whore waits at the end!
+Part6=Besides being a devil on earth, Melinda is the top scorer in the Challenge--and the president of the Tit Busters.
+Part7=Ray can't wait to join the Tit Busters! The club's already figured out the password and accessed everyone's measurements!
+Part8=If Ray's tits aren't as big as Melinda's, maybe she'll come over to his house and perform surgery!
+Part9='I've made it this far,' Ray thinks. 'Totally fair, with my mega-cock.' Then he starts the next maze. 'Totally unfair!' he yelps.
+Part10=Groov-u-loids! Ray makes it almost to the end. He's stoked!
+[End Level]
+FirstTry=Yowser! First Try!
+GoBitBuster=Go Tit Buster!
+Finished=Finished! Good Work!
+AtLast=At last! You did it!
+TimeBon=Time Bonus:  %d
+LevBon=Level Bonus:  %li
+LevScore=Level Score:  %li
+TotScore=Total Score:  %li
+TimeRecord=You have established a time record for this level!
+BeatTR=You beat the previous time record by %d second%s!
+IncScore=You increased your score on this level by %li point%s!
+[End Game]
+Msg1=Great Job, Ray!
+Msg2=Melinda herself offers Ray membership in the exclusive Tit Busters club, and gives him access to the breast surgery system.  Ray is in heaven!
+MsgScore=You completed %d levels, and your total score for the challenge is %li points.
+FLevNum=144
+LevNum=149
+[Miscellaneous]
+Death1=Ooops! Don't step in the fire without fire boots!
+Death2=Ooops! Ray can't swim without flippers!
+Death3=Ooops! Don't touch the bombs!
+Death4=Ooops! Watch out for moving blocks!
+Death5=Ooops! Look out for creatures!
+Death6=Ooops! Out of time
+SkipLev=You seem to be having trouble with this level.
+NewGame=Starting a new game will begin you back at level 1, reset your score to zero, and forget the passwords to any levels you have visited.
+NoMemory=There is not enough memory to load Ray's Challenge.
+CorruptDAT=Corrupt or inaccessible CHIPS.DAT file.
+[Graphics]
+OBJ32_4=C:\Windows\CCUP\Interfaces\skin_challengo\OBJ32_4.bmp
+OBJ32_4E=C:\Windows\CCUP\Interfaces\skin_challengo\OBJ32_4E.bmp
+OBJ32_1=C:\Windows\CCUP\Interfaces\skin_challengo\OBJ32_1.bmp
+BACKGROUND=C:\Windows\CCUP\Interfaces\skin_challengo\BACKGROUND.bmp
+INFOWND=C:\Windows\CCUP\Interfaces\skin_challengo\INFOWND.bmp
+CHIPEND=C:\Windows\CCUP\Interfaces\skin_challengo\CHIPEND.bmp
+GFX200=C:\Windows\CCUP\Interfaces\skin_challengo\200.bmp

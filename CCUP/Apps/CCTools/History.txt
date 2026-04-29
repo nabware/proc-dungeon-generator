@@ -1,0 +1,69 @@
+CCTools History
+===============
+
+10/23/03 - 1.2b (CCEdit 1.2.17.187)
+  * Fixed a pasting/clearing/filling bug that could cause crashes.
+  * Also fixed copying bug that would draw downsized bitmaps
+    incorrectly onto the clipboard
+
+10/21/03 - 1.2a (CCHack 1.2.2.39)
+  * Somehow, the loading and saving of the 200 graphic (the digits)
+    from patch files didn't get properly implemented. This updated
+    version fixes that.
+
+10/20/03 - 1.2 (CCEdit 1.2.17.185, CCLM 1.2.6.48, CCHack 1.2.2.38)
+  > CCEdit
+    * Did some optomization, and tons of bugfixes
+    * Lots of object hilighting bugfixes and enhancements, including:
+      * Teleports now hilight the target teleporter
+      * Most of the flickering problem has been removed
+    * Tooltips can be shown for many items.
+    * Tip of the Day feature added.
+    * Copying and pasting doesn't screw up monster list anymore, but
+      instead adds to it.
+    * Tileset option has been moved to the menu, where people can find
+      it ;)
+    * Object hilighting is color-coded now
+    * Advanced menu added for advanced editing
+  > CCLM
+    * You can now view all sorts of file properties
+    * .CCI files can be included for more information about a levelset
+      (including bold scores, meaning .bold files are no longer needed.
+      They are, however, still supported).
+    * You can now warp to a level in TileWorld too
+    * The icon of the default program for playing or editing is used on 
+      the Edit and Play buttons.
+  > CCHack (formerly the Customizer)
+    * Graphics functions now work, and they should work for all MS CC
+      executables, even if the graphics are different sizes (file sizes,
+      not actual width/length changes...  Although some graphics'
+      physical sizes can be changed too, such as the BACKGROUND graphic)
+  > The help file has been fixed up a bit too
+
+7/29/03 - 1.1a (Customizer 1.1.1.14)
+  * Fixed a bug in the customizer build 13 (only) release that would
+    give a lot of errors when loading an EXE file
+
+7/23/03 - 1.1 (CCEdit 1.1.15.145, CCLM 1.1.5.30, Customizer 1.1.1.13)
+  > CCLM (formerly the PLM)
+    * Changed name to CCLM (Chip's Challenge Level Manager)
+    * Added Options box for new options and changing paths
+    * You can now warp to a specific level in MSCC and in CCEdit
+    * Automatically sets the end level for levelsets in MSCC
+    * Dislplays score information for easier score tracking
+    * Use .bold files to show scores that you have the "bold" on
+    * Standalone build of CCLM now has it's own smaller help file
+  > CCEdit
+    * Testing of single levels (as opposed to entire levelsets) works
+      properly now
+    * Level testing automatically sets the end level, for both single
+      level tests and entire levelset tests
+    * If an item is linked to more than one other item, all linked items
+      will be hilighted
+  > Help update: Offsets list is now properly columnated
+
+7/03/03 - 1.0a (CCEdit 1.0.14.132, PLM 1.0.1.7, Customizer 1.0.1.11)
+  * Fixed version numbers and various little tweaks
+
+5/05/03 - 1.0 (CCEdit 0.1.14.130, PLM 0.0.1.6, Customizer 0.0.1.11)
+  * First public release (finally...)!

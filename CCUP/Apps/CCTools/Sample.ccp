@@ -1,0 +1,95 @@
+[General]
+PrgTitle=CCEdit Sample
+EntPack=
+EntPackEntry=CCEdit Sample
+ChipsDAT=samp.ccl
+Unknown=
+AboutName=
+[Default Sounds]
+Tool=
+Door=
+Death=
+LevComplete=
+Socket=
+HitWall=
+Thief=
+Sound=
+Chip=
+Button=
+Water=
+Bomb=
+Teleporter=
+Timer=
+Bell=
+Midi1=
+Midi2=
+Midi3=
+[Menus]
+Game=
+NewGame=
+Pause=
+BestTimes=
+Exit=
+Cheat=&Cheat-a-thon
+Options=
+Music=
+SFX=
+Color=
+Level=
+Restart=
+Next=
+Previous=
+GoTo=
+Help=
+Contents=
+HowToPlay=
+Commands=
+UseHelp=
+About=
+[Part Texts]
+Part1=
+Part2=
+Part3=
+Part4=
+Part5=
+Part6=
+Part7=
+Part8=
+Part9=
+Part10=
+[End Level]
+FirstTry=Sweet!
+GoBitBuster=Go Chip, Go!
+Finished=Yay, you finished!!!
+AtLast='Bout time!!!
+TimeBon=
+LevBon=
+LevScore=
+TotScore=
+TimeRecord=
+BeatTR=
+IncScore=
+[End Game]
+Msg1=
+Msg2=
+MsgScore=
+FLevNum=9
+LevNum=9
+[Miscellaneous]
+Death1=Ooh, ooh, hot hot!!! (GET FIRE BOOTS)
+Death2=Glug glug glug... (GET FLIPPERS)
+Death3=Kaboom!!!
+Death4=Swish, slide...  Huh? Wha happen'?
+Death5=These guys can eat you alive!
+Death6=Time's up!
+SkipLev=
+NewGame=NO! Don't do THAT! You'll have to start ALL over again!
+NoMemory=
+CorruptDAT=
+[Graphics]
+OBJ32_4=(Internal)
+OBJ32_4E=(Internal)
+OBJ32_1=(Internal)
+BACKGROUND=(Internal)
+INFOWND=(Internal)
+CHIPEND=(Internal)
