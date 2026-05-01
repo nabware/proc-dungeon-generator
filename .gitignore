@@ -1,44 +1,5 @@
-# Local Python environments
-venv/
-.venv/
-
-# Python bytecode and caches
+# Python cache directories
 __pycache__/
-*.py[cod]
-*.so
 
-# Generated solver outputs and scratch artifacts
-generated_*
-asp_generated_*
-*_scratch.*
-!tile_level_bfs_solver.py
-*_path_icons.png
-*_path_icons_scratch.png
-*_route.gif
-*_route_scratch.gif
-*_two_graph_*.png
-*_two_graph_*.gif
-*_macro_rooms.png
-*_macro_plan.png
-level*.png
-key_pyramid*.png
-*_level.png
-*_render.png
-*_render.ppm
-
-# Scraped documentation mirrors and their extracted asset folders
-*.html
-*_files/
-!DAT - The Chip's Challenge Wiki - The Chip's Challenge Database that anyone can edit!_files/
-!DAT - The Chip's Challenge Wiki - The Chip's Challenge Database that anyone can edit!_files/**
-
-# Misc local clutter
-*.log
-*.tmp
-*.bak
-.DS_Store
-notes.txt
-WORK_SUMMARY.txt
-*_prototype.py
-*_demo.py
-*room_graph_solver.py
+# Root-level rendered images
+/*.png
