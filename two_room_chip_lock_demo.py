@@ -27,7 +27,7 @@ ROOM0_X0 = 1
 ROOM1_X0 = ROOM0_X0 + ROOM_W + CORRIDOR_W
 
 SPRITE_DIR = Path(
-    "/home/nabeel/chips-challenge-2/DAT - The Chip's Challenge Wiki - The Chip's Challenge Database that anyone can edit!_files"
+    "/home/nabeel/proc-dungeon-generator/DAT - The Chip's Challenge Wiki - The Chip's Challenge Database that anyone can edit!_files"
 )
 
 

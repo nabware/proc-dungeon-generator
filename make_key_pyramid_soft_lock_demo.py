@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 
 from graph_solver_scratch import effective_tile_id, load_level_by_number, solve_with_chip_state
-from level_renderer import render_level
+from level_renderer import render_level, render_level_to_path
 from room_macro_micro_bfs_solver import (
     solve_two_graph_hierarchical,
     validate_all_solution_paths,
@@ -109,7 +109,7 @@ def main() -> None:
 
     OUTPUT_JSON.write_text(json.dumps(soft_lock_level, indent=2))
     OUTPUT_MAP.write_text(render_ascii(soft_lock_level) + "\n")
-    render_level(soft_lock_level, tile_size=24).save(OUTPUT_PNG)
+    render_level_to_path(soft_lock_level, OUTPUT_PNG, tile_size=24)
 
     tile_result = solve_with_chip_state(soft_lock_level)
     two_result = solve_two_graph_hierarchical(soft_lock_level, collect_all=False)

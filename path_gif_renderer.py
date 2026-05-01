@@ -85,7 +85,7 @@ def infer_direction(prev_pos: int, cur_pos: int, width: int = 32) -> str:
 
 def load_chip_sprites(tile_size: int = 32) -> dict[str, Image.Image]:
     """Load directional Chip sprites from the extracted wiki image folder."""
-    root = Path("/home/nabeel/chips-challenge-2")
+    root = Path("/home/nabeel/proc-dungeon-generator")
     sprite_dir = next(iter(root.glob("*_files")), None)
     if sprite_dir is None:
         return {}
@@ -106,7 +106,7 @@ def load_chip_sprites(tile_size: int = 32) -> dict[str, Image.Image]:
 
 
 def load_floor_sprite(tile_size: int = 32) -> Image.Image | None:
-    root = Path("/home/nabeel/chips-challenge-2")
+    root = Path("/home/nabeel/proc-dungeon-generator")
     sprite_dir = next(iter(root.glob("*_files")), None)
     if sprite_dir is None:
         return None

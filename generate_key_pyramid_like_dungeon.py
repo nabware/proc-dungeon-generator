@@ -29,7 +29,7 @@ from graph_solver_scratch import (
     solve_with_chip_state,
 )
 from room_macro_micro_bfs_solver import solve_two_graph_hierarchical, validate_all_solution_paths
-from level_renderer import render_level
+from level_renderer import render_level, render_level_to_path
 from path_gif_renderer import render_route_gif
 from path_icon_renderer import create_path_icon_sheet
 
@@ -380,8 +380,7 @@ def main() -> None:
     out_json.write_text(json.dumps(accepted_level, indent=2))
     out_map.write_text(render_ascii(accepted_level) + "\n")
 
-    img = render_level(accepted_level, tile_size=24)
-    img.save(out_png)
+    render_level_to_path(accepted_level, out_png, tile_size=24)
 
     img_path = out_png
     render_route_gif(

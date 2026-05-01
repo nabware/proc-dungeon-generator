@@ -29,7 +29,7 @@ def main():
     parser.add_argument(
         "--dat",
         type=Path,
-        default=Path("/home/nabeel/chips-challenge-2/CCUP/Apps/Chip's Challenge/CHIPS.DAT"),
+        default=Path("/home/nabeel/proc-dungeon-generator/CCUP/Apps/Chip's Challenge/CHIPS.DAT"),
         help="Path to CHIPS.DAT.",
     )
     parser.add_argument(

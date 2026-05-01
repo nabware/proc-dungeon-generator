@@ -23,6 +23,8 @@ asp_generated_*
 # Scraped documentation mirrors and their extracted asset folders
 *.html
 *_files/
+!DAT - The Chip's Challenge Wiki - The Chip's Challenge Database that anyone can edit!_files/
+!DAT - The Chip's Challenge Wiki - The Chip's Challenge Database that anyone can edit!_files/**
 
 # Misc local clutter
 *.log

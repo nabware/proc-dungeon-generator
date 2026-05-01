@@ -17,6 +17,11 @@ try:
 except ImportError:
     Image = None
     ImageDraw = None
+else:
+    try:
+        from level_renderer import render_dat_level
+    except Exception:
+        render_dat_level = None
 
 WIDTH = 32
 HEIGHT = 32
@@ -303,7 +308,7 @@ def create_path_icon_sheet(
 
 
 def main() -> None:
-    dat_path = Path("/home/nabeel/chips-challenge-2/CCUP/Apps/Chip's Challenge/CHIPS.DAT")
+    dat_path = Path("/home/nabeel/proc-dungeon-generator/CCUP/Apps/Chip's Challenge/CHIPS.DAT")
     data = dat_path.read_bytes()
 
     t0 = time.perf_counter()
@@ -322,8 +327,16 @@ def main() -> None:
         print(f"Shortest move count: {result['moves']}")
         print(f"Path (L/R/U/D): {result['path']}")
 
-        level_img_path = Path("/home/nabeel/chips-challenge-2/level1.png")
-        out_sheet = Path("/home/nabeel/chips-challenge-2/level1_path_icons.png")
+        level_img_path = Path("/home/nabeel/proc-dungeon-generator/level1.png")
+        out_sheet = Path("/home/nabeel/proc-dungeon-generator/level1_path_icons.png")
+        if not level_img_path.exists() and render_dat_level is not None:
+            try:
+                print("level1.png not found — rendering from DAT...")
+                render_dat_level(dat_path, 1, level_img_path, tile_size=32)
+                print(f"Rendered {level_img_path}")
+            except Exception as e:
+                print("Failed to render level1.png:", e)
+
         if level_img_path.exists():
             create_path_icon_sheet(level_img_path, result["positions"], out_sheet)
             print(f"Path icon sheet: {out_sheet}")

@@ -238,7 +238,7 @@ def load_dat_file(filepath):
 def render_level(level, tile_size=32, images_path=None):
     """Render a level to a PIL Image using actual tile sprites"""
     if images_path is None:
-        images_path = Path('/home/nabeel/chips-challenge-2/DAT - The Chip\'s Challenge Wiki - The Chip\'s Challenge Database that anyone can edit!_files')
+        images_path = Path('/home/nabeel/proc-dungeon-generator/DAT - The Chip\'s Challenge Wiki - The Chip\'s Challenge Database that anyone can edit!_files')
     
     # Load all tile images into cache
     tile_cache = {}
@@ -308,6 +308,40 @@ def render_level(level, tile_size=32, images_path=None):
     rgb_img = Image.new('RGB', (width, height), (192, 192, 192))
     rgb_img.paste(img, (0, 0), img)
     return rgb_img
+
+
+def render_level_to_path(level: dict, out_path, tile_size: int = 32, images_path=None):
+    """Render an in-memory `level` dict and save it to `out_path`.
+
+    This centralizes image saving so other scripts call a single function.
+    """
+    img = render_level(level, tile_size=tile_size, images_path=images_path)
+    out_path = Path(out_path)
+    img.save(out_path)
+    return out_path
+
+
+def load_level_by_number(dat_path: Path, target_number: int) -> dict:
+    """Load one level by DAT level number using the local DAT parser.
+
+    This mirrors similar helper in other modules but keeps DAT parsing
+    functionality inside this renderer module so callers need not import
+    parsing helpers from multiple places.
+    """
+    levels = load_dat_file(dat_path)
+    for lvl in levels:
+        if int(lvl.get("number", -1)) == int(target_number):
+            return lvl
+    raise ValueError(f"Level number {target_number} not found in {dat_path}")
+
+
+def render_dat_level(dat_path: Path, level_number: int, out_path, tile_size: int = 32, images_path=None):
+    """Load a level from a DAT file and render it to `out_path`.
+
+    Uses the local DAT parsing helpers to avoid cross-module imports.
+    """
+    level = load_level_by_number(dat_path, level_number)
+    return render_level_to_path(level, out_path, tile_size=tile_size, images_path=images_path)
 
 
 def effective_tile_id(level, pos):
@@ -636,7 +670,7 @@ def solve_level_bfs(level):
 
 
 def main():
-    dat_file = Path('/home/nabeel/chips-challenge-2/CCUP/Apps/Chip\'s Challenge/CHIPS.DAT')
+    dat_file = Path('/home/nabeel/proc-dungeon-generator/CCUP/Apps/Chip\'s Challenge/CHIPS.DAT')
     
     # Load the DAT file
     levels = load_dat_file(dat_file)
@@ -714,7 +748,7 @@ def main():
             img = render_level(level, tile_size=32)
 
             # Save image
-            output_path = Path(f'/home/nabeel/chips-challenge-2/level{level_num}.png')
+            output_path = Path(f'/home/nabeel/proc-dungeon-generator/level{level_num}.png')
             img.save(output_path)
             print(f"Saved to {output_path}")
             print(f"Image size: {img.size[0]}x{img.size[1]} pixels")
