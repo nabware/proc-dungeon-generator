@@ -11,6 +11,7 @@ __pycache__/
 generated_*
 asp_generated_*
 *_scratch.*
+!tile_level_bfs_solver.py
 *_path_icons.png
 *_path_icons_scratch.png
 *_route.gif
@@ -19,6 +20,11 @@ asp_generated_*
 *_two_graph_*.gif
 *_macro_rooms.png
 *_macro_plan.png
+level*.png
+key_pyramid*.png
+*_level.png
+*_render.png
+*_render.ppm
 
 # Scraped documentation mirrors and their extracted asset folders
 *.html
@@ -31,3 +37,8 @@ asp_generated_*
 *.tmp
 *.bak
 .DS_Store
+notes.txt
+WORK_SUMMARY.txt
+*_prototype.py
+*_demo.py
+*room_graph_solver.py

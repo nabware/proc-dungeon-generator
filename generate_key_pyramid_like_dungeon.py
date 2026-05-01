@@ -18,7 +18,7 @@ import json
 import random
 from pathlib import Path
 
-from graph_solver_scratch import (
+from tile_level_bfs_solver import (
     CHIP_IDS,
     EXIT_IDS,
     KEY_TO_INDEX,

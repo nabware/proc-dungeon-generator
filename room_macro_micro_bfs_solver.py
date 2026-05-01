@@ -14,7 +14,7 @@ from collections import deque
 from pathlib import Path
 import time
 
-from graph_solver_scratch import (
+from tile_level_bfs_solver import (
     BLOCKED_IDS,
     CHIP_IDS,
     EXIT_IDS,

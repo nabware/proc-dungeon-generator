@@ -4,7 +4,7 @@
 Pipeline:
 1) Run clingo on an ASP encoding to get one answer set.
 2) Convert paft/taft atoms into an abstract graph with lock/key semantics.
-3) Reuse solve_with_abstract_graph from graph_solver_scratch.py.
+3) Reuse solve_with_abstract_graph from tile_level_bfs_solver.py.
 """
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ import platform
 import resource
 import subprocess
 
-from graph_solver_scratch import solve_with_abstract_graph
+from tile_level_bfs_solver import solve_with_abstract_graph
 
 
 def parse_args() -> argparse.Namespace:

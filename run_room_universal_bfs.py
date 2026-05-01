@@ -15,7 +15,7 @@ import argparse
 import json
 from pathlib import Path
 
-from graph_solver_scratch import load_level_by_number
+from tile_level_bfs_solver import load_level_by_number
 from room_macro_micro_bfs_solver import validate_no_softlock_to_exit
 
 

@@ -8,7 +8,7 @@ import sys
 # Add current directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
-from graph_solver_scratch import (
+from tile_level_bfs_solver import (
     load_level_by_number,
     find_start_position,
     solve_with_chip_state,

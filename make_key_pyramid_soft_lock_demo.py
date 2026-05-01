@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from graph_solver_scratch import effective_tile_id, load_level_by_number, solve_with_chip_state
+from tile_level_bfs_solver import effective_tile_id, load_level_by_number, solve_with_chip_state
 from level_renderer import render_level, render_level_to_path
 from room_macro_micro_bfs_solver import (
     solve_two_graph_hierarchical,
