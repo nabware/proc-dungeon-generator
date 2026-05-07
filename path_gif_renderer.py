@@ -21,7 +21,7 @@ try:
 except ImportError as exc:  # pragma: no cover
     raise SystemExit("Pillow is required. Install with: pip install pillow") from exc
 
-from level_renderer import effective_tile_id, load_dat_file
+from chips_level_renderer import effective_tile_id, load_dat_file
 
 START_IDS = {0x6C, 0x6D, 0x6E, 0x6F}
 CHIP_IDS = {0x02, 0x20}

@@ -677,8 +677,8 @@ def main():
     
     if levels:
         # CLI:
-        #   python level_renderer.py [level_num]            -> render
-        #   python level_renderer.py solve [level_num]      -> solve via BFS
+        #   python chips_level_renderer.py [level_num]            -> render
+        #   python chips_level_renderer.py solve [level_num]      -> solve via BFS
         import sys
         args = sys.argv[1:]
 

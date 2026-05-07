@@ -19,7 +19,7 @@ except ImportError:
     ImageDraw = None
 else:
     try:
-        from level_renderer import render_dat_level
+        from chips_level_renderer import render_dat_level
     except Exception:
         render_dat_level = None
 
@@ -342,7 +342,7 @@ def main() -> None:
             print(f"Path icon sheet: {out_sheet}")
         else:
             print("Path icon sheet skipped: level1.png not found.")
-            print("Run level_renderer.py 1 first to generate the full level image.")
+            print("Run chips_level_renderer.py 1 first to generate the full level image.")
     else:
         print(f"Reason: {result.get('reason')}")
 

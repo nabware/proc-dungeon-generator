@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 
 from tile_level_bfs_solver import effective_tile_id, load_level_by_number, solve_with_chip_state
-from level_renderer import render_level, render_level_to_path
+from chips_level_renderer import render_level, render_level_to_path
 from room_macro_micro_bfs_solver import (
     solve_two_graph_hierarchical,
     validate_all_solution_paths,

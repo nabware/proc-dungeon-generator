@@ -3,7 +3,7 @@ Chip's Challenge Level Renderer
 Purpose
 - Central renderer for DAT levels and in-memory level dicts.
 
-Key functions (in `level_renderer.py`)
+Key functions (in `chips_level_renderer.py`)
 
 - `render_level(level, tile_size=32, images_path=None)`
   - Render an in-memory `level` dict (with `layer1` and `layer2`) to a PIL Image.
@@ -34,7 +34,7 @@ Recommended usage
 source venv/bin/activate
 python3 - <<'PY'
 from pathlib import Path
-from level_renderer import render_dat_level
+from chips_level_renderer import render_dat_level
 render_dat_level(Path('CCUP/Apps/Chip\'s Challenge/CHIPS.DAT'), 1, Path('level1.png'), tile_size=32)
 PY
 ```
@@ -45,7 +45,7 @@ PY
 source venv/bin/activate
 python3 - <<'PY'
 from pathlib import Path
-from level_renderer import render_dat_level
+from chips_level_renderer import render_dat_level
 render_dat_level(Path('CCUP/Level Sets/CCLP1/data/CCLP1.dat'), 1, Path('key_pyramid_level.png'), tile_size=32)
 PY
 ```
@@ -56,6 +56,6 @@ Why centralize
 - Other scripts should call `render_level_to_path()` or `render_dat_level()` instead of using ad-hoc PIL code.
 
 Notes for future sessions
-- If you move or rename the tileset folder, update `.gitignore` and `images_path` default in `level_renderer.py`.
+- If you move or rename the tileset folder, update `.gitignore` and `images_path` default in `chips_level_renderer.py`.
 - For automated builds, prefer `render_dat_level()` to keep scripts idempotent.
 

@@ -115,7 +115,7 @@ if solve_result['solvable'] and validation_result['valid']:
 **Render solution:**
 ```python
 from path_gif_renderer import render_route_gif
-from level_renderer import render_level_to_path
+from chips_level_renderer import render_level_to_path
 
 render_level_to_path(level, "output.png")
 render_route_gif("output.png", result['positions'], "output.gif")
@@ -131,10 +131,10 @@ render_route_gif("output.png", result['positions'], "output.gif")
 
 ### Graph Builders
 - `room_macro_micro_bfs_solver.py::build_room_graph()` — Room segmentation
-- `level_renderer.py::build_level_graph()` — Simple adjacency graph
+- `chips_level_renderer.py::build_level_graph()` — Simple adjacency graph
 
 ### Renderers
-- `level_renderer.py` — PIL-based level PNG rendering
+- `chips_level_renderer.py` — PIL-based level PNG rendering
 - `path_gif_renderer.py` — Animated solution GIF rendering
 - `path_icon_renderer.py` — Path icon sheet rendering
 

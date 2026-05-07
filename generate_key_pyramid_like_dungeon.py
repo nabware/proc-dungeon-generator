@@ -29,7 +29,7 @@ from tile_level_bfs_solver import (
     solve_with_chip_state,
 )
 from room_macro_micro_bfs_solver import solve_two_graph_hierarchical, validate_all_solution_paths
-from level_renderer import render_level, render_level_to_path
+from chips_level_renderer import render_level, render_level_to_path
 from path_gif_renderer import render_route_gif
 from path_icon_renderer import create_path_icon_sheet
 
