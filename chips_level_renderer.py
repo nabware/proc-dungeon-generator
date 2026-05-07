@@ -429,6 +429,101 @@ def build_level_graph(level, width=32, height=32):
     return graph
 
 
+def level_dict_to_graph(level, width=32, height=32):
+    """Derive multiple graph views from a level dict.
+
+    Returns a tuple: (tile_graph, room_map, resource_graph)
+
+    - tile_graph: dict[pos, list[pos]] adjacency of passable tiles
+    - room_map: list[int] mapping pos -> room_id (or -1 for blocked)
+    - resource_graph: dict with lists of resources found (chips, keys, locks, sockets, exits)
+    """
+    # Tile adjacency
+    tile_graph = build_level_graph(level, width=width, height=height)
+
+    # Room segmentation via flood-fill on passable tiles
+    room_map = [-1] * (width * height)
+    rooms = {}
+    room_id = 0
+
+    for pos in range(width * height):
+        if pos not in tile_graph:
+            continue
+        if room_map[pos] != -1:
+            continue
+
+        # BFS flood fill
+        q = [pos]
+        room_map[pos] = room_id
+        rooms[room_id] = [pos]
+        qi = 0
+        while qi < len(q):
+            cur = q[qi]
+            qi += 1
+            for nb in tile_graph.get(cur, []):
+                if room_map[nb] == -1:
+                    room_map[nb] = room_id
+                    rooms[room_id].append(nb)
+                    q.append(nb)
+        room_id += 1
+
+    # Resource extraction
+    def eff(pos):
+        return effective_tile_id(level, pos)
+
+    resource_graph = {
+        'chips': [],
+        'keys': [],
+        'locks': [],
+        'sockets': [],
+        'exits': [],
+    }
+
+    for pos in range(width * height):
+        t = eff(pos)
+        if t in {0x02, 0x20}:
+            resource_graph['chips'].append(pos)
+        if t in {0x64, 0x65, 0x66, 0x67}:
+            resource_graph['keys'].append({'pos': pos, 'tile': t})
+        if t in {0x16, 0x17, 0x18, 0x19}:
+            resource_graph['locks'].append({'pos': pos, 'tile': t})
+        if t in {0x21, 0x22}:
+            resource_graph['sockets'].append(pos)
+        if t == 0x15:
+            resource_graph['exits'].append(pos)
+
+    return tile_graph, room_map, resource_graph
+
+
+def graph_to_level_dict(node_tile_map, width=32, height=32, number=0, time=0):
+    """Convert a mapping of tile positions -> tile IDs into a level dict.
+
+    This is intended for procedural generators that build per-tile assignments.
+    Any positions not present in `node_tile_map` are treated as floor (0x00).
+    The function returns a minimal level dict compatible with the renderer.
+    """
+    total = width * height
+    layer1 = [0x00] * total
+    layer2 = [0x00] * total
+
+    for pos, tile_id in node_tile_map.items():
+        if pos < 0 or pos >= total:
+            continue
+        # Place everything in the top layer by default (generator may decide otherwise)
+        layer2[pos] = int(tile_id)
+
+    chips = sum(1 for t in layer1 + layer2 if t in (0x02, 0x20))
+
+    return {
+        'size': 0,
+        'number': number,
+        'time': time,
+        'chips': chips,
+        'layer1': layer1,
+        'layer2': layer2,
+    }
+
+
 def find_tile_positions(level, tile_ids, width=32, height=32):
     """Find positions whose effective tile is in tile_ids."""
     out = []

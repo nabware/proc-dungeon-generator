@@ -20,6 +20,10 @@ Key functions (in `chips_level_renderer.py`)
   - Convenience helper that loads a level from the DAT file and writes the rendered PNG to `out_path`.
   - Preferred when you want to render a named level from a DAT pack in a single call.
 
+Graph APIs
+- `level_dict_to_graph(level)` — produce tile adjacency, room map, and resource graph from a `level` dict
+- `graph_to_level_dict(node_tile_map)` — convert a per-tile mapping into a renderer-ready `level` dict
+
 Images / Tileset
 - The renderer expects a tileset folder extracted from the Chip's Challenge Wiki HTML mirror named exactly:
   `DAT - The Chip's Challenge Wiki - The Chip's Challenge Database that anyone can edit!_files`
